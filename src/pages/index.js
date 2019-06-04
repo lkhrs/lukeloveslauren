@@ -1,25 +1,16 @@
-import React from 'react';
+import React from "react"
+import { Link } from "gatsby"
 
-import Layout from '@common/Layout';
-import Navbar from '@common/Navbar';
-
-import Header from '@sections/Header';
-import About from '@sections/About';
-import Brands from '@sections/Brands';
-import Team from '@sections/Team';
-import Faq from '@sections/Faq';
-import Footer from '@sections/Footer';
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <Navbar />
-    <Header />
-    <About />
-    <Brands />
-    <Team />
-    <Faq />
-    <Footer />
+    <SEO title="Home" />
+    <Link to="/RSVP/"><h1>RSVP</h1></Link>
+    <Link to="/Story/"><h1>Story</h1></Link>
+    <Link to="/Registry/"><h1>Registry</h1></Link>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage

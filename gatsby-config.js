@@ -1,22 +1,16 @@
-const path = require('path');
-
 module.exports = {
+  siteMetadata: {
+    title: `Luke Loves Lauren`,
+    description: `Luke and Lauren's wedding site`,
+    author: `@lkhrs`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-svgr`,
-    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `team`,
-        path: `${__dirname}/src/images/team`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `art`,
-        path: `${__dirname}/src/images/art`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -24,33 +18,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Absurd`,
-        short_name: `absurd`,
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
         start_url: `/`,
-        background_color: `#8bd8ed`,
-        theme_color: `#8bd8ed`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `minimal-ui`,
-        icon: `static/favicon.svg`,
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`average`, `prata\:400,700`],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@components': path.resolve(__dirname, 'src/components'),
-          '@common': path.resolve(__dirname, 'src/components/common'),
-          '@images': path.resolve(__dirname, 'src/images'),
-          '@sections': path.resolve(__dirname, 'src/components/sections'),
-          '@styles': path.resolve(__dirname, 'src/styles/'),
-          '@static': path.resolve(__dirname, 'static/'),
-        },
-      },
-    },
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
-};
+}
