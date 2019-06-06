@@ -25,6 +25,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+        <div className="container">
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -34,10 +35,13 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
+          <main>
+          {children}
+          </main>
           <footer>
 
           </footer>
+        </div>
         </div>
       </>
     )}

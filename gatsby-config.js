@@ -31,7 +31,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Oswald', 'Open Sans', 'Staatliches']
+          families: ['Staatliches', 'Alegreya Sans', 'Alegreya:black', 'Satisfy']
         }
       }
     },
