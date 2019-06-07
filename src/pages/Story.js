@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const Story = () => (
   <Layout>
     <SEO title="Story" />
-    <h1>Hi from the Story</h1>
+    <h1 style={{textAlign: `center`}}>The Story</h1>
   </Layout>
 )
 

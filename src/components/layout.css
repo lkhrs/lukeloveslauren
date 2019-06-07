@@ -6,21 +6,22 @@ html {
 body {
   background-color: #c7f3ff;
   margin: 0;
-  /* color: #3d3d3d; */
-  color: rgba(179, 163, 93, 0.8);
-  text-shadow: 0 1px 1px rgba(255, 234, 141, 0.8);
+  color: #60391ade;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .container {
-  box-shadow: 0 0 1px 1em #ff6c8770, 0 0 1px 2em rgb(255, 255, 255);
-  margin: 2em;
-  position:absolute;
+  box-shadow: 0 0 0 1em #ff6c8770, 0 0 0 2em rgb(255, 255, 255);
+  margin-top:2em;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   min-height: 100vh;
+}
+header h1 {
+  padding-bottom: 1rem;
+  border-bottom: .8rem dotted rgb(255, 255, 255);
 }
 article,
 aside,

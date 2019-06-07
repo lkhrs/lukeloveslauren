@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import richard from "../images/richard24.jpg"
+import Richard24 from "../components/richard24"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +18,10 @@ const IndexPage = () => (
     <Link style={{padding: `0 2rem 0`}} to="/RSVP/"><h1>RSVP</h1></Link>
     <Link style={{padding: `0 2rem 0`}} to="/Story/"><h1>Story</h1></Link>
     <Link style={{padding: `0 2rem 0`}} to="/Registry/"><h1>Registry</h1></Link>
-    <img src={richard} height="500px" Alt="Luke and Lauren"/>
+    </div>
+
+    <div>
+        <Richard24 />
     </div>
   </Layout>
 )
