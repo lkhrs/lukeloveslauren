@@ -1,5 +1,5 @@
 html {
-  font-family: 'Alegreya Sans', sans-serif !important;
+  font-family: 'Alegreya', serif !important;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -76,7 +76,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
   margin: 0.67em 0;
   font-family: 'Alegreya' !important;
   font-weight: bold;
@@ -91,7 +91,10 @@ a h1 {
 h2 {
   font-family: 'Alegreya' !important;
 }
-p {font-size: 1.5rem;}
+p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
 mark {
   background-color: #ff0;
   color: #000;
@@ -213,7 +216,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
