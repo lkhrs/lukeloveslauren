@@ -31,7 +31,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Alegreya Sans', 'Alegreya:black', 'Satisfy']
+          families: ['Alegreya+Sans', 'Alegreya:black', 'Satisfy']
         }
       }
     },

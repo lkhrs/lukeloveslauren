@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const RSVP = () => (
   <Layout>
     <SEO title="Registry" />
-    <h1>Hi from the Registry</h1>
+    <h1 style={{textAlign: `center`}}>The Registry</h1>
   </Layout>
 )
 

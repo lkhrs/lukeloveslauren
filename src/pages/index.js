@@ -20,6 +20,11 @@ const IndexPage = () => (
     <Link style={{padding: `0 2rem 0`}} to="/Registry/"><h1>Registry</h1></Link>
     </div>
 
+    <div style={{textAlign: `center`}}>
+      <h2>Luke Elijah Harris and Lauren Nicole Eckhardt</h2>
+      <p>are leaping into love on the 29th of February 2020</p>
+    </div>
+
     <div>
         <Richard24 />
     </div>
