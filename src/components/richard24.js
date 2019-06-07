@@ -26,7 +26,7 @@ const Richard24 = () => (
         }
       }
     `}
-    render={data => <Img style={{borderRadius: `1rem`}} fluid={data.richard24.childImageSharp.fluid} />}
+    render={data => <Img fluid={data.richard24.childImageSharp.fluid} />}
   />
 )
 export default Richard24
