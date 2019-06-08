@@ -13,7 +13,7 @@ const Story = (props) => (
       <h1>The First Meeting</h1>
       <h2>May 26, 2016</h2>
       <Img fluid={props.data.imageOne.childImageSharp.fluid} style={{maxWidth: 500}} />
-      <p>It was a Thursday. Luke met Lauren at a bar, promptly forgot her name, and then came up with every name in the book.</p>
+      <p>It was a Thursday. Luke met Lauren at a bar, promptly forgot her name, and then came up with every name in the book, which Lauren played along with.</p>
       <p style={{fontStyle: `italic`}}>Lauren (now Edward) left.</p>
       <h1>The Pursuit Begins</h1>
       <h2>July 8, 2016</h2>
@@ -30,6 +30,10 @@ const Story = (props) => (
       <h1>Second Date</h1>
       <h2 style={{fontStyle:`italic`, fontWeight: `normal`}}>It's Official</h2>
       <h2>November 19, 2016</h2>
+      <Img fluid={props.data.imageTwo.childImageSharp.fluid} style={{maxWidth: 500}} />
+      <Img fluid={props.data.imageThree.childImageSharp.fluid} style={{maxWidth: 500}} />
+      <p>A Grouplove concert and a Sims headband somehow convinces Lauren that Luke is her boyfriend. Clearly a recipe for success.</p>
+
     </div>
   </Layout>
 )
@@ -45,6 +49,7 @@ fragment fluidImage on File {
   }
 }
 `;
+
 export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "one.jpg" }) {
