@@ -41,21 +41,33 @@ const Story = (props) => (
       <p>Our indie band album cover was created.</p>
       <Img fluid={props.data.imageFour.childImageSharp.fluid} style={{maxWidth: 500}} />
       <h1>The Rest Of The Story (Including Rompers)</h1>
+      <h2>April 2017</h2>
+      <p>Sherwood Forest Faire</p>
+      <Img fluid={props.data.sherwood.childImageSharp.fluid} style={{maxWidth: 1000}} />
       <h2>April 28-May 30 2017</h2>
       <p>A trip to Kansas City MO for Planet Comicon.</p>
       <p><i>This is where Vanellope the minivan came into the picture.</i></p>
       <Img fluid={props.data.kcmo.childImageSharp.fluid} style={{maxWidth: 500}} />
       <Img fluid={props.data.kcmo2.childImageSharp.fluid} style={{maxWidth: 1000}} />
+      <h2>October 2017</h2>
+      <p>ACL 2017</p>
+      <Img fluid={props.data.acl.childImageSharp.fluid} style={{maxWidth: 500}} />
       <h2>November 26, 2017</h2>
       <p>A cliche Austin picture.</p>
       <Img fluid={props.data.cliche.childImageSharp.fluid} style={{maxWidth: 1000}} />
+      <h2>December 2017</h2>
+      <Img fluid={props.data.jones.childImageSharp.fluid} style={{maxWidth: 500}} />
       <h2>May 2018</h2>
       <p>Rompin' around San Fran.</p>
       <Img fluid={props.data.sanfran1.childImageSharp.fluid} style={{maxWidth: 1000}} />
       <Img fluid={props.data.sanfran3.childImageSharp.fluid} style={{maxWidth: 1000}} />
+      <p>putt putt champions at Urban Putt</p>
+      <Img fluid={props.data.puttputt.childImageSharp.fluid} style={{maxWidth: 500}} />
       <p>Muir Woods National Redwood Forest</p>
       <Img fluid={props.data.redwood.childImageSharp.fluid} style={{maxWidth: 1000}} />
       <Img fluid={props.data.sanfran2.childImageSharp.fluid} style={{maxWidth: 1000}} />
+      <h2>November 12, 2018</h2>
+      <Img fluid={props.data.capitol.childImageSharp.fluid} style={{maxWidth: 500}} />
       <h2>2019</h2>
       <p>Peter Pan Minigolf</p>
       <p><i>rawr</i></p>
@@ -132,6 +144,21 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     richard24: file(relativePath: { eq: "richard24.jpg" }) {
+      ...fluidImage
+    }
+    sherwood: file(relativePath: { eq: "sherwood.jpg" }) {
+      ...fluidImage
+    }
+    puttputt: file(relativePath: { eq: "puttputt.jpg" }) {
+      ...fluidImage
+    }
+    acl: file(relativePath: { eq: "acl.png" }) {
+      ...fluidImage
+    }
+    capitol: file(relativePath: { eq: "capital.jpg" }) {
+      ...fluidImage
+    }
+    jones: file(relativePath: { eq: "jones.jpg" }) {
       ...fluidImage
     }
   }
