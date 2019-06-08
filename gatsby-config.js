@@ -33,10 +33,12 @@ module.exports = {
         fonts: [
           {
             family: `Satisfy`,
+            encode: 'true',
           },
           {
             family: `Alegreya`,
-            variants: [`black`, 'regular']
+            variants: [`black`, 'regular'],
+            encode: 'true',
           },
         ],
       },
