@@ -72,8 +72,6 @@ const Story = (props) => (
       <p>Peter Pan Minigolf</p>
       <p><i>rawr</i></p>
       <Img fluid={props.data.peterpan.childImageSharp.fluid} style={{maxWidth: 500}} />
-      <p>Lauren's solo EP</p>
-      <Img fluid={props.data.ep.childImageSharp.fluid} style={{maxWidth: 1000}} />
       <p>Davis Mountains State Park</p>
       <Img fluid={props.data.fortdavis.childImageSharp.fluid} style={{maxWidth: 1000}} />
       <h1>The Proposal</h1>
@@ -135,9 +133,6 @@ export const pageQuery = graphql`
       ...fluidImage
     }
     peterpan: file(relativePath: { eq: "peterpan.jpg" }) {
-      ...fluidImage
-    }
-    ep: file(relativePath: { eq: "ep.jpg" }) {
       ...fluidImage
     }
     fortdavis: file(relativePath: { eq: "fortdavis.jpg" }) {
