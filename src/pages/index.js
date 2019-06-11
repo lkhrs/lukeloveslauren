@@ -21,7 +21,7 @@ const IndexPage = () => (
     </div>
 
     <div style={{textAlign: `center`}}>
-      <h2>Luke Elijah Harris and Lauren Nicole Eckhardt</h2>
+      <h2>Lauren Nicole Eckhardt and Luke Elijah Harris</h2>
       <p>are leaping into love on the 29th of February 2020</p>
     </div>
 
