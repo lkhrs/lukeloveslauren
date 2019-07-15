@@ -80,7 +80,6 @@ const Story = (props) => (
       <Img fluid={props.data.richard24.childImageSharp.fluid} style={{maxWidth: 1000}} />
       <h1>The Marriage</h1>
       <h2>February 29, 2020</h2>
-      <Link style={{padding: `0 2rem 0`, textAlign: `center`}} to="/RSVP/"><h1>RSVP</h1></Link>
     </div>
   </Layout>
 )
