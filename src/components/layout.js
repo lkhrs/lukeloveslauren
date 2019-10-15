@@ -11,6 +11,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { Link } from "gatsby"
+import cactus from "../images/cactus.png"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,7 +29,7 @@ const Layout = ({ children }) => (
       <>
         <div className="container">
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+          <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
@@ -35,11 +37,24 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+          <div style={{
+      display: `flex`,
+      alignItems: `stretch`,
+      justifyContent: `center`,
+      flexWrap: `wrap`
+    }}>
+
+    <Link style={{padding: `0 2rem 0`}} to="/Story/"><h1>Story</h1></Link>
+    <Link style={{padding: `0 2rem 0`}} to="/RSVP/"><h1>RSVP</h1></Link>
+    <Link style={{padding: `0 2rem 0`}} to="/Registry/"><h1>Registry</h1></Link>
+            </div>
           <main>
           {children}
           </main>
           <footer>
-
+            <div style={{textAlign: `center`, marginTop: `5rem`, opacity: `0.20`}}>
+              <a href="https://luke.work" target="_blank" title="website by luke"><img style={{maxWidth: `42px`}} src={cactus} /></a>
+            </div>
           </footer>
         </div>
         </div>
