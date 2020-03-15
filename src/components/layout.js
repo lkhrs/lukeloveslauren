@@ -45,7 +45,6 @@ const Layout = ({ children }) => (
     }}>
 
     <Link style={{padding: `0 2rem 0`}} to="/Story/"><h1>Story</h1></Link>
-    <Link style={{padding: `0 2rem 0`}} to="/RSVP/"><h1>RSVP</h1></Link>
     <Link style={{padding: `0 2rem 0`}} to="/Registry/"><h1>Registry</h1></Link>
             </div>
           <main>
